@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Lovers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('hero-background.jpg') no-repeat center/cover;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .hero {
+            margin-top: 100px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-primary {
+            padding: 12px 24px;
+            background: #ff5722;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #e64a19;
+        }
+
+        .trendy-recipes, .shop, .blogs, .newsletter {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .recipes, .shop-items, .blog-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .recipe-card, .shop-card, .blog-card {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            max-width: 250px;
+        }
+
+        .recipe-card img, .blog-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Food Lovers</div>
+            <ul>
+                <li><a href="#">Recettes</a></li>
+                <li><a href="#">Boutique</a></li>
+                <li><a href="#">Abonnement</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Delicious Dishes for Food Lovers</h1>
+            <p>Découvrez des recettes incroyables pour toutes les occasions.</p>
+            <button class="btn-primary">Explorer les recettes</button>
+        </div>
+    </header>
+    
+    <section class="trendy-recipes">
+        <h2>Recettes Tendance</h2>
+        <div class="recipes">
+            <div class="recipe-card"><img src="chicken-fajita.jpg" alt="Chicken Fajita"><h3>Chicken Fajita</h3></div>
+            <div class="recipe-card"><img src="spicy-asian.jpg" alt="Spicy Asian"><h3>Spicy Asian</h3></div>
+            <div class="recipe-card"><img src="crispy-salad.jpg" alt="Crispy Salad"><h3>Crispy Salad</h3></div>
+        </div>
+    </section>
+    
+    <section class="shop">
+        <h2>Notre Boutique</h2>
+        <div class="shop-items">
+            <div class="shop-card">Apéritifs</div>
+            <div class="shop-card">Pain</div>
+            <div class="shop-card">Fromage</div>
+            <div class="shop-card">Soupes</div>
+        </div>
+    </section>
+    
+    <section class="blogs">
+        <h2>Blogs de Recettes</h2>
+        <div class="blog-list">
+            <div class="blog-card"><img src="chef-cooking.jpg" alt="Chef en action"><h3>Notre Chef en Action</h3></div>
+            <div class="blog-card"><img src="cooking-tips.jpg" alt="Astuces de cuisine"><h3>Les Meilleures Astuces</h3></div>
+        </div>
+    </section>
+    
+    <section class="newsletter">
+        <h2>Abonnez-vous à notre Newsletter</h2>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Entrez votre email">
+            <button class="btn-primary">S'abonner</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Food Lovers. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
